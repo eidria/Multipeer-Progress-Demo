@@ -9,10 +9,14 @@
 import SwiftUI
 
 @main
+@MainActor
 struct Multipeer_Progress_DemoApp: App {
+    @State var appModel = AppModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(appModel)
+                .environment(appModel.sessionManager)
         }
     }
 }

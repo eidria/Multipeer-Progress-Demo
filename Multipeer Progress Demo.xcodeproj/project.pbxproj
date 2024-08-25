@@ -7,23 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24C6889A2C7AACE900F8D36C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C688992C7AACE900F8D36C /* AppModel.swift */; };
+		24C6889B2C7AACE900F8D36C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C688992C7AACE900F8D36C /* AppModel.swift */; };
+		24C6889D2C7AB25D00F8D36C /* FileTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C6889C2C7AB25D00F8D36C /* FileTransferView.swift */; };
+		24C6889E2C7AB25D00F8D36C /* FileTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C6889C2C7AB25D00F8D36C /* FileTransferView.swift */; };
+		24C688A02C7AB77B00F8D36C /* ConnectionStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C6889F2C7AB77B00F8D36C /* ConnectionStatusView.swift */; };
+		24C688A12C7AB77B00F8D36C /* ConnectionStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C6889F2C7AB77B00F8D36C /* ConnectionStatusView.swift */; };
 		24D12F3B2C7A86E600D4B7BB /* Multipeer_Progress_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12F3A2C7A86E600D4B7BB /* Multipeer_Progress_DemoApp.swift */; };
 		24D12F3D2C7A86E600D4B7BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12F3C2C7A86E600D4B7BB /* ContentView.swift */; };
 		24D12F3F2C7A86E700D4B7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D12F3E2C7A86E700D4B7BB /* Assets.xcassets */; };
 		24D12F432C7A86E700D4B7BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D12F422C7A86E700D4B7BB /* Preview Assets.xcassets */; };
+		24D12F502C7A8BF000D4B7BB /* MPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12F4F2C7A8BF000D4B7BB /* MPSessionManager.swift */; };
+		24D12F922C7AA9B900D4B7BB /* image.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 24D12F6E2C7AA9B900D4B7BB /* image.HEIC */; };
+		24D12F9C2C7AAA8000D4B7BB /* MPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12F4F2C7A8BF000D4B7BB /* MPSessionManager.swift */; };
+		24D12F9D2C7AAA8000D4B7BB /* Multipeer_Progress_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12F3A2C7A86E600D4B7BB /* Multipeer_Progress_DemoApp.swift */; };
+		24D12FA02C7AAA8000D4B7BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D12F422C7A86E700D4B7BB /* Preview Assets.xcassets */; };
+		24D12FA12C7AAA8000D4B7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D12F3E2C7A86E700D4B7BB /* Assets.xcassets */; };
+		24D12FA22C7AAA8000D4B7BB /* image.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 24D12F6E2C7AA9B900D4B7BB /* image.HEIC */; };
+		24D12FAB2C7AAB2100D4B7BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12FAA2C7AAB0C00D4B7BB /* ContentView.swift */; };
+		24D12FAD2C7AAB5600D4B7BB /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12FAC2C7AAB5600D4B7BB /* StatusView.swift */; };
+		24D12FAE2C7AAB9400D4B7BB /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12FAC2C7AAB5600D4B7BB /* StatusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24D12F372C7A86E600D4B7BB /* Multipeer Progress Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multipeer Progress Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C688992C7AACE900F8D36C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		24C6889C2C7AB25D00F8D36C /* FileTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTransferView.swift; sourceTree = "<group>"; };
+		24C6889F2C7AB77B00F8D36C /* ConnectionStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStatusView.swift; sourceTree = "<group>"; };
+		24D12F372C7A86E600D4B7BB /* Multipeer Progress Demo - iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multipeer Progress Demo - iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D12F3A2C7A86E600D4B7BB /* Multipeer_Progress_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multipeer_Progress_DemoApp.swift; sourceTree = "<group>"; };
 		24D12F3C2C7A86E600D4B7BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		24D12F3E2C7A86E700D4B7BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D12F402C7A86E700D4B7BB /* Multipeer_Progress_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Multipeer_Progress_Demo.entitlements; sourceTree = "<group>"; };
 		24D12F422C7A86E700D4B7BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		24D12F4B2C7A887B00D4B7BB /* Multipeer-Progress-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Multipeer-Progress-Demo-Info.plist"; sourceTree = SOURCE_ROOT; };
+		24D12F4F2C7A8BF000D4B7BB /* MPSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSessionManager.swift; sourceTree = "<group>"; };
+		24D12F6E2C7AA9B900D4B7BB /* image.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = image.HEIC; sourceTree = "<group>"; };
+		24D12FA62C7AAA8000D4B7BB /* Multipeer Progress Demo - macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multipeer Progress Demo - macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D12FA72C7AAA8000D4B7BB /* Multipeer Progress Demo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Multipeer Progress Demo copy-Info.plist"; path = "/Users/dangalbraith/Developer/Projects/GitHub/Multipeer Progress Demo/Multipeer Progress Demo copy-Info.plist"; sourceTree = "<absolute>"; };
+		24D12FAA2C7AAB0C00D4B7BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24D12FAC2C7AAB5600D4B7BB /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		24D12F342C7A86E600D4B7BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D12F9E2C7AAA8000D4B7BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,13 +71,15 @@
 			children = (
 				24D12F392C7A86E600D4B7BB /* Multipeer Progress Demo */,
 				24D12F382C7A86E600D4B7BB /* Products */,
+				24D12FA72C7AAA8000D4B7BB /* Multipeer Progress Demo copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		24D12F382C7A86E600D4B7BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24D12F372C7A86E600D4B7BB /* Multipeer Progress Demo.app */,
+				24D12F372C7A86E600D4B7BB /* Multipeer Progress Demo - iOS.app */,
+				24D12FA62C7AAA8000D4B7BB /* Multipeer Progress Demo - macOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,11 +87,13 @@
 		24D12F392C7A86E600D4B7BB /* Multipeer Progress Demo */ = {
 			isa = PBXGroup;
 			children = (
-				24D12F3A2C7A86E600D4B7BB /* Multipeer_Progress_DemoApp.swift */,
-				24D12F3C2C7A86E600D4B7BB /* ContentView.swift */,
 				24D12F3E2C7A86E700D4B7BB /* Assets.xcassets */,
+				24D12F492C7A872600D4B7BB /* Code */,
+				24D12F4C2C7A894100D4B7BB /* Configuration */,
 				24D12F402C7A86E700D4B7BB /* Multipeer_Progress_Demo.entitlements */,
+				24D12F4B2C7A887B00D4B7BB /* Multipeer-Progress-Demo-Info.plist */,
 				24D12F412C7A86E700D4B7BB /* Preview Content */,
+				24D12F4A2C7A873900D4B7BB /* Test Images */,
 			);
 			path = "Multipeer Progress Demo";
 			sourceTree = "<group>";
@@ -69,12 +106,74 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		24D12F492C7A872600D4B7BB /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				24D12F3A2C7A86E600D4B7BB /* Multipeer_Progress_DemoApp.swift */,
+				24D12F4D2C7A897000D4B7BB /* Model */,
+				24D12F4E2C7A897B00D4B7BB /* Views */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		24D12F4A2C7A873900D4B7BB /* Test Images */ = {
+			isa = PBXGroup;
+			children = (
+				24D12F6E2C7AA9B900D4B7BB /* image.HEIC */,
+			);
+			path = "Test Images";
+			sourceTree = "<group>";
+		};
+		24D12F4C2C7A894100D4B7BB /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		24D12F4D2C7A897000D4B7BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24D12F4F2C7A8BF000D4B7BB /* MPSessionManager.swift */,
+				24C688992C7AACE900F8D36C /* AppModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24D12F4E2C7A897B00D4B7BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24D12FA92C7AAACD00D4B7BB /* iOS */,
+				24D12FA82C7AAABF00D4B7BB /* macOS */,
+				24D12FAC2C7AAB5600D4B7BB /* StatusView.swift */,
+				24C6889C2C7AB25D00F8D36C /* FileTransferView.swift */,
+				24C6889F2C7AB77B00F8D36C /* ConnectionStatusView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24D12FA82C7AAABF00D4B7BB /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				24D12FAA2C7AAB0C00D4B7BB /* ContentView.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		24D12FA92C7AAACD00D4B7BB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				24D12F3C2C7A86E600D4B7BB /* ContentView.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		24D12F362C7A86E600D4B7BB /* Multipeer Progress Demo */ = {
+		24D12F362C7A86E600D4B7BB /* Multipeer Progress Demo - iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24D12F462C7A86E700D4B7BB /* Build configuration list for PBXNativeTarget "Multipeer Progress Demo" */;
+			buildConfigurationList = 24D12F462C7A86E700D4B7BB /* Build configuration list for PBXNativeTarget "Multipeer Progress Demo - iOS" */;
 			buildPhases = (
 				24D12F332C7A86E600D4B7BB /* Sources */,
 				24D12F342C7A86E600D4B7BB /* Frameworks */,
@@ -84,9 +183,26 @@
 			);
 			dependencies = (
 			);
-			name = "Multipeer Progress Demo";
+			name = "Multipeer Progress Demo - iOS";
 			productName = "Multipeer Progress Demo";
-			productReference = 24D12F372C7A86E600D4B7BB /* Multipeer Progress Demo.app */;
+			productReference = 24D12F372C7A86E600D4B7BB /* Multipeer Progress Demo - iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24D12F992C7AAA8000D4B7BB /* Multipeer Progress Demo - macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D12FA32C7AAA8000D4B7BB /* Build configuration list for PBXNativeTarget "Multipeer Progress Demo - macOS" */;
+			buildPhases = (
+				24D12F9A2C7AAA8000D4B7BB /* Sources */,
+				24D12F9E2C7AAA8000D4B7BB /* Frameworks */,
+				24D12F9F2C7AAA8000D4B7BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Multipeer Progress Demo - macOS";
+			productName = "Multipeer Progress Demo";
+			productReference = 24D12FA62C7AAA8000D4B7BB /* Multipeer Progress Demo - macOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +233,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24D12F362C7A86E600D4B7BB /* Multipeer Progress Demo */,
+				24D12F362C7A86E600D4B7BB /* Multipeer Progress Demo - iOS */,
+				24D12F992C7AAA8000D4B7BB /* Multipeer Progress Demo - macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +246,17 @@
 			files = (
 				24D12F432C7A86E700D4B7BB /* Preview Assets.xcassets in Resources */,
 				24D12F3F2C7A86E700D4B7BB /* Assets.xcassets in Resources */,
+				24D12F922C7AA9B900D4B7BB /* image.HEIC in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D12F9F2C7AAA8000D4B7BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D12FA02C7AAA8000D4B7BB /* Preview Assets.xcassets in Resources */,
+				24D12FA12C7AAA8000D4B7BB /* Assets.xcassets in Resources */,
+				24D12FA22C7AAA8000D4B7BB /* image.HEIC in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +267,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C688A02C7AB77B00F8D36C /* ConnectionStatusView.swift in Sources */,
 				24D12F3D2C7A86E600D4B7BB /* ContentView.swift in Sources */,
+				24C6889D2C7AB25D00F8D36C /* FileTransferView.swift in Sources */,
+				24D12F502C7A8BF000D4B7BB /* MPSessionManager.swift in Sources */,
+				24D12FAD2C7AAB5600D4B7BB /* StatusView.swift in Sources */,
+				24C6889A2C7AACE900F8D36C /* AppModel.swift in Sources */,
 				24D12F3B2C7A86E600D4B7BB /* Multipeer_Progress_DemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D12F9A2C7AAA8000D4B7BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C688A12C7AB77B00F8D36C /* ConnectionStatusView.swift in Sources */,
+				24D12F9C2C7AAA8000D4B7BB /* MPSessionManager.swift in Sources */,
+				24C6889E2C7AB25D00F8D36C /* FileTransferView.swift in Sources */,
+				24D12F9D2C7AAA8000D4B7BB /* Multipeer_Progress_DemoApp.swift in Sources */,
+				24D12FAE2C7AAB9400D4B7BB /* StatusView.swift in Sources */,
+				24C6889B2C7AACE900F8D36C /* AppModel.swift in Sources */,
+				24D12FAB2C7AAB2100D4B7BB /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,6 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -274,6 +423,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Multipeer-Progress-Demo-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -292,7 +442,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eidria.Multipeer-Progress-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,6 +463,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Multipeer-Progress-Demo-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -330,10 +482,89 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eidria.Multipeer-Progress-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24D12FA42C7AAA8000D4B7BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Multipeer Progress Demo/Multipeer_Progress_Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Multipeer Progress Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = 37W6Z248FA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Multipeer Progress Demo copy-Info.plist";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eidria.Multipeer-Progress-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		24D12FA52C7AAA8000D4B7BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Multipeer Progress Demo/Multipeer_Progress_Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Multipeer Progress Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = 37W6Z248FA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Multipeer Progress Demo copy-Info.plist";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eidria.Multipeer-Progress-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -349,11 +580,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24D12F462C7A86E700D4B7BB /* Build configuration list for PBXNativeTarget "Multipeer Progress Demo" */ = {
+		24D12F462C7A86E700D4B7BB /* Build configuration list for PBXNativeTarget "Multipeer Progress Demo - iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24D12F472C7A86E700D4B7BB /* Debug */,
 				24D12F482C7A86E700D4B7BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D12FA32C7AAA8000D4B7BB /* Build configuration list for PBXNativeTarget "Multipeer Progress Demo - macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D12FA42C7AAA8000D4B7BB /* Debug */,
+				24D12FA52C7AAA8000D4B7BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
