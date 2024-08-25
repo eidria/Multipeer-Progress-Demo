@@ -16,6 +16,7 @@ struct FileTransferView: View {
             VStack {
                 if let transfer = fileTransfer, let progress = fileTransfer?.progress {
                     Text(verbatim: transfer.fileName)
+                    // Commenting out the next line will stop crashes from occuring
                     ProgressView(progress)
                 } else {
                     Text(verbatim: fileTransfer?.fileName ?? "No activity")
@@ -25,7 +26,3 @@ struct FileTransferView: View {
         }
     }
 }
-
-// #Preview {
-//    FileTransferView()
-// }

@@ -74,23 +74,19 @@ extension MPSessionManager: MCSessionDelegate {
      * keeps track of connection states
      */
     func startServices() {
-        //        #if os(macOS)
         print("starting advertising services")
         advertiser.startAdvertisingPeer()
-        //      #else
+
         print("starting browsing services")
         browser.startBrowsingForPeers()
-        //     #endif
     }
 
     func stopServices() {
-        //       #if os(macOS)
         print("stopping advertising services")
         advertiser.stopAdvertisingPeer()
-        //       #else
+
         print("stopping browsing services")
         browser.stopBrowsingForPeers()
-        //      #endif
     }
 
     public func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {

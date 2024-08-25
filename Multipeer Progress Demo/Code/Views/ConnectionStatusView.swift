@@ -27,6 +27,7 @@ struct ConnectionStatusView: View {
                 } label: {
                     Text(verbatim: appModel.isSendingFiles ? "Stop File Send" : "Start File Send")
                 }
+                .buttonStyle(.bordered)
                 .disabled(connectionState != .connected)
                 .padding()
             }
