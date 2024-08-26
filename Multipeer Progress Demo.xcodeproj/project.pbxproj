@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24B6AE582C7D43E7001A740A /* crash.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B6AE572C7D43E7001A740A /* crash.png */; };
+		24B6AE592C7D43E7001A740A /* crash.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B6AE572C7D43E7001A740A /* crash.png */; };
 		24C6889A2C7AACE900F8D36C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C688992C7AACE900F8D36C /* AppModel.swift */; };
 		24C6889B2C7AACE900F8D36C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C688992C7AACE900F8D36C /* AppModel.swift */; };
 		24C6889D2C7AB25D00F8D36C /* FileTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C6889C2C7AB25D00F8D36C /* FileTransferView.swift */; };
@@ -30,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24B6AE572C7D43E7001A740A /* crash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crash.png; sourceTree = "<group>"; };
 		24C688992C7AACE900F8D36C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		24C6889C2C7AB25D00F8D36C /* FileTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTransferView.swift; sourceTree = "<group>"; };
 		24C6889F2C7AB77B00F8D36C /* ConnectionStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStatusView.swift; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 		24D12F4A2C7A873900D4B7BB /* Test Images */ = {
 			isa = PBXGroup;
 			children = (
+				24B6AE572C7D43E7001A740A /* crash.png */,
 				24D12F6E2C7AA9B900D4B7BB /* image.HEIC */,
 			);
 			path = "Test Images";
@@ -245,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D12F432C7A86E700D4B7BB /* Preview Assets.xcassets in Resources */,
+				24B6AE582C7D43E7001A740A /* crash.png in Resources */,
 				24D12F3F2C7A86E700D4B7BB /* Assets.xcassets in Resources */,
 				24D12F922C7AA9B900D4B7BB /* image.HEIC in Resources */,
 			);
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D12FA02C7AAA8000D4B7BB /* Preview Assets.xcassets in Resources */,
+				24B6AE592C7D43E7001A740A /* crash.png in Resources */,
 				24D12FA12C7AAA8000D4B7BB /* Assets.xcassets in Resources */,
 				24D12FA22C7AAA8000D4B7BB /* image.HEIC in Resources */,
 			);
