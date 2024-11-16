@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2457D92A2CE80FE4002242E9 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D9292CE80FE4002242E9 /* CustomProgressView.swift */; };
+		2457D92C2CE80FF2002242E9 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D92B2CE80FF2002242E9 /* CustomProgressView.swift */; };
 		24B6AE582C7D43E7001A740A /* crash.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B6AE572C7D43E7001A740A /* crash.png */; };
 		24B6AE592C7D43E7001A740A /* crash.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B6AE572C7D43E7001A740A /* crash.png */; };
 		24C6889A2C7AACE900F8D36C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C688992C7AACE900F8D36C /* AppModel.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2457D9292CE80FE4002242E9 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		2457D92B2CE80FF2002242E9 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		24B6AE572C7D43E7001A740A /* crash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crash.png; sourceTree = "<group>"; };
 		24C688992C7AACE900F8D36C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		24C6889C2C7AB25D00F8D36C /* FileTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTransferView.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 		24D12FA82C7AAABF00D4B7BB /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				2457D92B2CE80FF2002242E9 /* CustomProgressView.swift */,
 				24D12FAA2C7AAB0C00D4B7BB /* ContentView.swift */,
 			);
 			path = macOS;
@@ -167,6 +172,7 @@
 		24D12FA92C7AAACD00D4B7BB /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2457D9292CE80FE4002242E9 /* CustomProgressView.swift */,
 				24D12F3C2C7A86E600D4B7BB /* ContentView.swift */,
 			);
 			path = iOS;
@@ -217,7 +223,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					24D12F362C7A86E600D4B7BB = {
 						CreatedOnToolsVersion = 15.4;
@@ -279,6 +285,7 @@
 				24D12F502C7A8BF000D4B7BB /* MPSessionManager.swift in Sources */,
 				24D12FAD2C7AAB5600D4B7BB /* StatusView.swift in Sources */,
 				24C6889A2C7AACE900F8D36C /* AppModel.swift in Sources */,
+				2457D92A2CE80FE4002242E9 /* CustomProgressView.swift in Sources */,
 				24D12F3B2C7A86E600D4B7BB /* Multipeer_Progress_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +300,7 @@
 				24D12F9D2C7AAA8000D4B7BB /* Multipeer_Progress_DemoApp.swift in Sources */,
 				24D12FAE2C7AAB9400D4B7BB /* StatusView.swift in Sources */,
 				24C6889B2C7AACE900F8D36C /* AppModel.swift in Sources */,
+				2457D92C2CE80FF2002242E9 /* CustomProgressView.swift in Sources */,
 				24D12FAB2C7AAB2100D4B7BB /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +342,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -396,6 +405,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -424,6 +434,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Multipeer Progress Demo/Multipeer_Progress_Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Multipeer Progress Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = 37W6Z248FA;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -464,6 +475,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Multipeer Progress Demo/Multipeer_Progress_Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Multipeer Progress Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = 37W6Z248FA;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -504,6 +516,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Multipeer Progress Demo/Multipeer_Progress_Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Multipeer Progress Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = 37W6Z248FA;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -543,6 +556,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Multipeer Progress Demo/Multipeer_Progress_Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Multipeer Progress Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = 37W6Z248FA;
 				ENABLE_HARDENED_RUNTIME = YES;
