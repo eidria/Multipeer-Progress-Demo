@@ -16,6 +16,9 @@ struct StatusView: View {
 
     var body: some View {
         VStack {
+            modePicker
+                .padding()
+            
             displayGrid
                 .onReceive(sessionManager.incomingFile) { transfer in
                     incomingFileTransfer = transfer
@@ -25,7 +28,19 @@ struct StatusView: View {
                 }
         }
     }
-
+    
+    var modePicker: some View {
+        @Bindable var coordinator = sessionManager
+        return Picker("Peer Mode", selection: $coordinator.peerMode) {
+            ForEach(PeerMode.allCases) { mode in
+                Text(mode.rawValue)
+                    .tag(mode)
+            }
+        }
+        .pickerStyle(SegmentedPickerStyle())
+        .labelsHidden()
+    }
+    
     var displayGrid: some View {
         Grid {
             GridRow {
@@ -57,6 +72,6 @@ struct StatusView: View {
     }
 }
 
-#Preview {
-    StatusView()
-}
+//#Preview {
+//    StatusView()
+//}

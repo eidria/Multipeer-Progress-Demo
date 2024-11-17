@@ -14,6 +14,14 @@ public struct FileTransfer {
     var progress: Progress?
 }
 
+public enum PeerMode: String, CaseIterable, Identifiable {
+    public var id: String { self.rawValue }
+    
+    case client = "Browser"
+    case server = "Advertiser"
+    case disabled = "Disabled"
+}
+
 @Observable
 @MainActor
 public class MPCoordinator: NSObject {
@@ -24,25 +32,22 @@ public class MPCoordinator: NSObject {
     let outgoingFile = CurrentValueSubject<FileTransfer?, Never>(nil)
 
     var connectionState = CurrentValueSubject<MCSessionState, Never>(.notConnected)
+    var peerMode: PeerMode = .disabled {
+        didSet {
+            peerModeChanged(oldvalue: oldValue, newvalue: peerMode)
+        }
+    }
 
     // service has to match Bonjour udp and tcp entries in info.plist
     static let service = "mpd"
 
-    let mpAdvertiser: MPAdvertiser?
-    let mpBrowser: MPBrowser?
+    var mpAdvertiser: MPAdvertiser?
+    var mpBrowser: MPBrowser?
 
     init(peerID: MCPeerID) {
         myName = peerID.displayName
         mcSession = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .none)
         mpSession = MPSessionManager(session: mcSession)
-
-//        #if os(macOS)
-            mpAdvertiser = MPAdvertiser(session: mcSession, serviceType: MPCoordinator.service)
-//            mpBrowser = nil
-//        #else
-            mpBrowser = MPBrowser(session: mcSession, serviceType: MPCoordinator.service)
-//            mpAdvertiser = nil
-//        #endif
 
         super.init()
 
@@ -78,6 +83,26 @@ public class MPCoordinator: NSObject {
         }
     }
 
+    func peerModeChanged(oldvalue: PeerMode, newvalue: PeerMode) {
+        guard oldvalue != newvalue else { return }
+
+        stopServices()
+
+        mpBrowser = nil
+        mpAdvertiser = nil
+
+        switch peerMode {
+        case .client:
+            mpBrowser = MPBrowser(session: mcSession, serviceType: MPCoordinator.service)
+        case .server:
+            mpAdvertiser = MPAdvertiser(session: mcSession, serviceType: MPCoordinator.service)
+        case .disabled:
+            ()
+        }
+
+        startServices()
+    }
+
     func handleFileSent(_ error: Error?) {
         if let transfer = outgoingFile.value {
             if let error {
@@ -94,9 +119,6 @@ public class MPCoordinator: NSObject {
 
     var connectionName: String = "No Connection"
 
-    /*
-     * keeps track of connection states
-     */
     func startServices() {
         if let mpAdvertiser {
             print("\(myName) starting advertising services")
@@ -132,9 +154,7 @@ public class MPCoordinator: NSObject {
         case .connecting:
             stopServices()
         case .connected:
-            if let connectedPeer = session.connectedPeers.first {
-                connectionName = connectedPeer.displayName
-            }
+            connectionName = peerID.displayName
         @unknown default: ()
         }
     }
