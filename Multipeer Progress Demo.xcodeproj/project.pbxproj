@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2457D92A2CE80FE4002242E9 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D9292CE80FE4002242E9 /* CustomProgressView.swift */; };
-		2457D92C2CE80FF2002242E9 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D92B2CE80FF2002242E9 /* CustomProgressView.swift */; };
+		240C31BB2CEA768300564F61 /* RepresentedProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240C31B92CEA768300564F61 /* RepresentedProgressView.swift */; };
+		240C31BC2CEA768300564F61 /* RepresentedProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240C31B92CEA768300564F61 /* RepresentedProgressView.swift */; };
 		2457D92F2CE92CF7002242E9 /* MPBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D92E2CE92CF7002242E9 /* MPBrowser.swift */; };
 		2457D9302CE92CF7002242E9 /* MPBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D92E2CE92CF7002242E9 /* MPBrowser.swift */; };
 		2457D9322CE92D1C002242E9 /* MPAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D9312CE92D1C002242E9 /* MPAdvertiser.swift */; };
@@ -46,8 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2457D9292CE80FE4002242E9 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
-		2457D92B2CE80FF2002242E9 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		240C31B92CEA768300564F61 /* RepresentedProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentedProgressView.swift; sourceTree = "<group>"; };
 		2457D92E2CE92CF7002242E9 /* MPBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPBrowser.swift; sourceTree = "<group>"; };
 		2457D9312CE92D1C002242E9 /* MPAdvertiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPAdvertiser.swift; sourceTree = "<group>"; };
 		2457D9342CE92D56002242E9 /* MPSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPSessionManager.swift; sourceTree = "<group>"; };
@@ -100,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240C31BA2CEA768300564F61 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				240C31B92CEA768300564F61 /* RepresentedProgressView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		2457D92D2CE92C6D002242E9 /* Multipeer */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +232,7 @@
 		24D12F4E2C7A897B00D4B7BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				240C31BA2CEA768300564F61 /* Shared */,
 				24D12FA92C7AAACD00D4B7BB /* iOS */,
 				24D12FA82C7AAABF00D4B7BB /* macOS */,
 				24D12FAC2C7AAB5600D4B7BB /* StatusView.swift */,
@@ -237,7 +245,6 @@
 		24D12FA82C7AAABF00D4B7BB /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				2457D92B2CE80FF2002242E9 /* CustomProgressView.swift */,
 				24D12FAA2C7AAB0C00D4B7BB /* ContentView.swift */,
 			);
 			path = macOS;
@@ -246,7 +253,6 @@
 		24D12FA92C7AAACD00D4B7BB /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2457D9292CE80FE4002242E9 /* CustomProgressView.swift */,
 				24D12F3C2C7A86E600D4B7BB /* ContentView.swift */,
 			);
 			path = iOS;
@@ -365,7 +371,7 @@
 				24D12FAD2C7AAB5600D4B7BB /* StatusView.swift in Sources */,
 				24C6889A2C7AACE900F8D36C /* AppModel.swift in Sources */,
 				2457D9352CE92D56002242E9 /* MPSessionManager.swift in Sources */,
-				2457D92A2CE80FE4002242E9 /* CustomProgressView.swift in Sources */,
+				240C31BB2CEA768300564F61 /* RepresentedProgressView.swift in Sources */,
 				24D12F3B2C7A86E600D4B7BB /* Multipeer_Progress_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,7 +392,7 @@
 				24D12FAE2C7AAB9400D4B7BB /* StatusView.swift in Sources */,
 				24C6889B2C7AACE900F8D36C /* AppModel.swift in Sources */,
 				2457D9362CE92D56002242E9 /* MPSessionManager.swift in Sources */,
-				2457D92C2CE80FF2002242E9 /* CustomProgressView.swift in Sources */,
+				240C31BC2CEA768300564F61 /* RepresentedProgressView.swift in Sources */,
 				24D12FAB2C7AAB2100D4B7BB /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

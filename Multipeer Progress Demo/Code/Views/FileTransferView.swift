@@ -17,7 +17,7 @@ struct FileTransferView: View {
                 if let transfer = fileTransfer, let progress = fileTransfer?.progress {
                     Text(verbatim: transfer.fileName)
                     // Commenting out the next line will stop crashes from occuring
-                    CustomProgressView(progress)
+                    RepresentedProgressView(progress)
                 } else {
                     Text(verbatim: fileTransfer?.fileName ?? "No activity")
                 }
