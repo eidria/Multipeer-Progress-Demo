@@ -146,8 +146,6 @@ public class MPCoordinator: NSObject {
     public func handleSessionChange(session: MCSession, peerID: MCPeerID, state: MCSessionState) {
         print("\(session.name) state changed to \(state.displayName) for \(peerID.displayName)")
 
-        connectionState.value = state
-
         switch state {
         case .notConnected:
             connectionName = "No Connection"
@@ -157,6 +155,8 @@ public class MPCoordinator: NSObject {
             connectionName = peerID.displayName
         @unknown default: ()
         }
+        
+        connectionState.value = state
     }
 
     public func handleReceivedData(session: MCSession, peerID: MCPeerID, data: Data) {
