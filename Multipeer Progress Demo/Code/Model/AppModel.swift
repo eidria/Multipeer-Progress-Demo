@@ -7,11 +7,12 @@
 
 import Foundation
 import Combine
+import MultipeerConnectivity
 
 @Observable
 @MainActor
 class AppModel {
-    var sessionManager: MPSessionManager
+    var sessionManager: MPCoordinator
     var isSendingFiles = false {
         didSet {
             if !isSendingFiles {
@@ -29,7 +30,7 @@ class AppModel {
     var sendFileURL = Bundle.main.url(forResource: "image", withExtension: "HEIC")!
     
     init() {
-        sessionManager = MPSessionManager(peerID: MPSessionManager.getPeerID())
+        sessionManager = MPCoordinator(peerID: MCPeerID.makePeerID())
         fileSentCancellable = sessionManager.outgoingFile.sink { maybeTransfer in
             // Outgoing transfer is set to nil when the transfer completes
             if self.isSendingFiles && maybeTransfer == nil {

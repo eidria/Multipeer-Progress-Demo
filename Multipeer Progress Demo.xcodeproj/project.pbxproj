@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		2457D92A2CE80FE4002242E9 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D9292CE80FE4002242E9 /* CustomProgressView.swift */; };
 		2457D92C2CE80FF2002242E9 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D92B2CE80FF2002242E9 /* CustomProgressView.swift */; };
+		2457D92F2CE92CF7002242E9 /* MPBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D92E2CE92CF7002242E9 /* MPBrowser.swift */; };
+		2457D9302CE92CF7002242E9 /* MPBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D92E2CE92CF7002242E9 /* MPBrowser.swift */; };
+		2457D9322CE92D1C002242E9 /* MPAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D9312CE92D1C002242E9 /* MPAdvertiser.swift */; };
+		2457D9332CE92D1C002242E9 /* MPAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D9312CE92D1C002242E9 /* MPAdvertiser.swift */; };
+		2457D9352CE92D56002242E9 /* MPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D9342CE92D56002242E9 /* MPSessionManager.swift */; };
+		2457D9362CE92D56002242E9 /* MPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D9342CE92D56002242E9 /* MPSessionManager.swift */; };
+		2457D9382CE9598D002242E9 /* AsyncStreamHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D9372CE9598D002242E9 /* AsyncStreamHandler.swift */; };
+		2457D9392CE9598D002242E9 /* AsyncStreamHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D9372CE9598D002242E9 /* AsyncStreamHandler.swift */; };
+		2457D93B2CE982BE002242E9 /* Multipeer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D93A2CE982BE002242E9 /* Multipeer+.swift */; };
+		2457D93C2CE982BE002242E9 /* Multipeer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D93A2CE982BE002242E9 /* Multipeer+.swift */; };
+		2457D93E2CE982EF002242E9 /* ProcessInfo+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D93D2CE982EF002242E9 /* ProcessInfo+.swift */; };
+		2457D93F2CE982EF002242E9 /* ProcessInfo+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2457D93D2CE982EF002242E9 /* ProcessInfo+.swift */; };
 		24B6AE582C7D43E7001A740A /* crash.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B6AE572C7D43E7001A740A /* crash.png */; };
 		24B6AE592C7D43E7001A740A /* crash.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B6AE572C7D43E7001A740A /* crash.png */; };
 		24C6889A2C7AACE900F8D36C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C688992C7AACE900F8D36C /* AppModel.swift */; };
@@ -21,9 +33,9 @@
 		24D12F3D2C7A86E600D4B7BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12F3C2C7A86E600D4B7BB /* ContentView.swift */; };
 		24D12F3F2C7A86E700D4B7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D12F3E2C7A86E700D4B7BB /* Assets.xcassets */; };
 		24D12F432C7A86E700D4B7BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D12F422C7A86E700D4B7BB /* Preview Assets.xcassets */; };
-		24D12F502C7A8BF000D4B7BB /* MPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12F4F2C7A8BF000D4B7BB /* MPSessionManager.swift */; };
+		24D12F502C7A8BF000D4B7BB /* MPCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12F4F2C7A8BF000D4B7BB /* MPCoordinator.swift */; };
 		24D12F922C7AA9B900D4B7BB /* image.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 24D12F6E2C7AA9B900D4B7BB /* image.HEIC */; };
-		24D12F9C2C7AAA8000D4B7BB /* MPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12F4F2C7A8BF000D4B7BB /* MPSessionManager.swift */; };
+		24D12F9C2C7AAA8000D4B7BB /* MPCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12F4F2C7A8BF000D4B7BB /* MPCoordinator.swift */; };
 		24D12F9D2C7AAA8000D4B7BB /* Multipeer_Progress_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12F3A2C7A86E600D4B7BB /* Multipeer_Progress_DemoApp.swift */; };
 		24D12FA02C7AAA8000D4B7BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D12F422C7A86E700D4B7BB /* Preview Assets.xcassets */; };
 		24D12FA12C7AAA8000D4B7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D12F3E2C7A86E700D4B7BB /* Assets.xcassets */; };
@@ -36,6 +48,12 @@
 /* Begin PBXFileReference section */
 		2457D9292CE80FE4002242E9 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		2457D92B2CE80FF2002242E9 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		2457D92E2CE92CF7002242E9 /* MPBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPBrowser.swift; sourceTree = "<group>"; };
+		2457D9312CE92D1C002242E9 /* MPAdvertiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPAdvertiser.swift; sourceTree = "<group>"; };
+		2457D9342CE92D56002242E9 /* MPSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPSessionManager.swift; sourceTree = "<group>"; };
+		2457D9372CE9598D002242E9 /* AsyncStreamHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStreamHandler.swift; sourceTree = "<group>"; };
+		2457D93A2CE982BE002242E9 /* Multipeer+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multipeer+.swift"; sourceTree = "<group>"; };
+		2457D93D2CE982EF002242E9 /* ProcessInfo+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProcessInfo+.swift"; sourceTree = "<group>"; };
 		24B6AE572C7D43E7001A740A /* crash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crash.png; sourceTree = "<group>"; };
 		24C688992C7AACE900F8D36C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		24C6889C2C7AB25D00F8D36C /* FileTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTransferView.swift; sourceTree = "<group>"; };
@@ -47,7 +65,7 @@
 		24D12F402C7A86E700D4B7BB /* Multipeer_Progress_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Multipeer_Progress_Demo.entitlements; sourceTree = "<group>"; };
 		24D12F422C7A86E700D4B7BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24D12F4B2C7A887B00D4B7BB /* Multipeer-Progress-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Multipeer-Progress-Demo-Info.plist"; sourceTree = SOURCE_ROOT; };
-		24D12F4F2C7A8BF000D4B7BB /* MPSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSessionManager.swift; sourceTree = "<group>"; };
+		24D12F4F2C7A8BF000D4B7BB /* MPCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCoordinator.swift; sourceTree = "<group>"; };
 		24D12F6E2C7AA9B900D4B7BB /* image.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = image.HEIC; sourceTree = "<group>"; };
 		24D12FA62C7AAA8000D4B7BB /* Multipeer Progress Demo - macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multipeer Progress Demo - macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D12FA72C7AAA8000D4B7BB /* Multipeer Progress Demo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Multipeer Progress Demo copy-Info.plist"; path = "/Users/dangalbraith/Developer/Projects/GitHub/Multipeer Progress Demo/Multipeer Progress Demo copy-Info.plist"; sourceTree = "<absolute>"; };
@@ -73,6 +91,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2457D92D2CE92C6D002242E9 /* Multipeer */ = {
+			isa = PBXGroup;
+			children = (
+				24D12F4F2C7A8BF000D4B7BB /* MPCoordinator.swift */,
+				2457D92E2CE92CF7002242E9 /* MPBrowser.swift */,
+				2457D9312CE92D1C002242E9 /* MPAdvertiser.swift */,
+				2457D9342CE92D56002242E9 /* MPSessionManager.swift */,
+				2457D93A2CE982BE002242E9 /* Multipeer+.swift */,
+				2457D93D2CE982EF002242E9 /* ProcessInfo+.swift */,
+			);
+			path = Multipeer;
+			sourceTree = "<group>";
+		};
 		24D12F2E2C7A86E600D4B7BB = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +147,8 @@
 		24D12F492C7A872600D4B7BB /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				2457D9372CE9598D002242E9 /* AsyncStreamHandler.swift */,
+				2457D92D2CE92C6D002242E9 /* Multipeer */,
 				24D12F3A2C7A86E600D4B7BB /* Multipeer_Progress_DemoApp.swift */,
 				24D12F4D2C7A897000D4B7BB /* Model */,
 				24D12F4E2C7A897B00D4B7BB /* Views */,
@@ -142,7 +175,6 @@
 		24D12F4D2C7A897000D4B7BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				24D12F4F2C7A8BF000D4B7BB /* MPSessionManager.swift */,
 				24C688992C7AACE900F8D36C /* AppModel.swift */,
 			);
 			path = Model;
@@ -282,9 +314,15 @@
 				24C688A02C7AB77B00F8D36C /* ConnectionStatusView.swift in Sources */,
 				24D12F3D2C7A86E600D4B7BB /* ContentView.swift in Sources */,
 				24C6889D2C7AB25D00F8D36C /* FileTransferView.swift in Sources */,
-				24D12F502C7A8BF000D4B7BB /* MPSessionManager.swift in Sources */,
+				2457D9382CE9598D002242E9 /* AsyncStreamHandler.swift in Sources */,
+				24D12F502C7A8BF000D4B7BB /* MPCoordinator.swift in Sources */,
+				2457D93F2CE982EF002242E9 /* ProcessInfo+.swift in Sources */,
+				2457D9322CE92D1C002242E9 /* MPAdvertiser.swift in Sources */,
+				2457D92F2CE92CF7002242E9 /* MPBrowser.swift in Sources */,
+				2457D93C2CE982BE002242E9 /* Multipeer+.swift in Sources */,
 				24D12FAD2C7AAB5600D4B7BB /* StatusView.swift in Sources */,
 				24C6889A2C7AACE900F8D36C /* AppModel.swift in Sources */,
+				2457D9352CE92D56002242E9 /* MPSessionManager.swift in Sources */,
 				2457D92A2CE80FE4002242E9 /* CustomProgressView.swift in Sources */,
 				24D12F3B2C7A86E600D4B7BB /* Multipeer_Progress_DemoApp.swift in Sources */,
 			);
@@ -295,11 +333,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				24C688A12C7AB77B00F8D36C /* ConnectionStatusView.swift in Sources */,
-				24D12F9C2C7AAA8000D4B7BB /* MPSessionManager.swift in Sources */,
+				24D12F9C2C7AAA8000D4B7BB /* MPCoordinator.swift in Sources */,
 				24C6889E2C7AB25D00F8D36C /* FileTransferView.swift in Sources */,
+				2457D9392CE9598D002242E9 /* AsyncStreamHandler.swift in Sources */,
 				24D12F9D2C7AAA8000D4B7BB /* Multipeer_Progress_DemoApp.swift in Sources */,
+				2457D93E2CE982EF002242E9 /* ProcessInfo+.swift in Sources */,
+				2457D9332CE92D1C002242E9 /* MPAdvertiser.swift in Sources */,
+				2457D9302CE92CF7002242E9 /* MPBrowser.swift in Sources */,
+				2457D93B2CE982BE002242E9 /* Multipeer+.swift in Sources */,
 				24D12FAE2C7AAB9400D4B7BB /* StatusView.swift in Sources */,
 				24C6889B2C7AACE900F8D36C /* AppModel.swift in Sources */,
+				2457D9362CE92D56002242E9 /* MPSessionManager.swift in Sources */,
 				2457D92C2CE80FF2002242E9 /* CustomProgressView.swift in Sources */,
 				24D12FAB2C7AAB2100D4B7BB /* ContentView.swift in Sources */,
 			);
@@ -451,10 +495,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eidria.Multipeer-Progress-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,10 +536,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eidria.Multipeer-Progress-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,10 +577,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eidria.Multipeer-Progress-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -573,10 +617,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eidria.Multipeer-Progress-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";

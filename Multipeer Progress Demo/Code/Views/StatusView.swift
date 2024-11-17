@@ -10,7 +10,7 @@ import SwiftUI
 @MainActor
 struct StatusView: View {
     @Environment(AppModel.self) var appModel
-    @Environment(MPSessionManager.self) var sessionManager
+    @Environment(MPCoordinator.self) var sessionManager
     @State var incomingFileTransfer: FileTransfer?
     @State var outgoingFileTransfer: FileTransfer?
 

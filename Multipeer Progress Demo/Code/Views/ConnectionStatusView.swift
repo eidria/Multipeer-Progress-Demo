@@ -10,7 +10,7 @@ import SwiftUI
 import MultipeerConnectivity
 
 struct ConnectionStatusView: View {
-    @Environment(MPSessionManager.self) var sessionManager
+    @Environment(MPCoordinator.self) var sessionManager
     @Environment(AppModel.self) var appModel
     
     @State var connectionName:String = ""
