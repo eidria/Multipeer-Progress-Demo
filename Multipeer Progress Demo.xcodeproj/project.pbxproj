@@ -54,6 +54,15 @@
 		2457D9372CE9598D002242E9 /* AsyncStreamHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStreamHandler.swift; sourceTree = "<group>"; };
 		2457D93A2CE982BE002242E9 /* Multipeer+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multipeer+.swift"; sourceTree = "<group>"; };
 		2457D93D2CE982EF002242E9 /* ProcessInfo+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProcessInfo+.swift"; sourceTree = "<group>"; };
+		246666412CEA56EC003007F8 /* Multipeer-Progress-Demo---iOS-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Multipeer-Progress-Demo---iOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		246666422CEA56EC003007F8 /* Multipeer-Progress-Demo---iOS-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Multipeer-Progress-Demo---iOS-Release.xcconfig"; sourceTree = "<group>"; };
+		246666432CEA56EC003007F8 /* Multipeer-Progress-Demo---iOS-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Multipeer-Progress-Demo---iOS-Shared.xcconfig"; sourceTree = "<group>"; };
+		246666452CEA56EC003007F8 /* Multipeer-Progress-Demo---macOS-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Multipeer-Progress-Demo---macOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		246666462CEA56EC003007F8 /* Multipeer-Progress-Demo---macOS-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Multipeer-Progress-Demo---macOS-Release.xcconfig"; sourceTree = "<group>"; };
+		246666472CEA56EC003007F8 /* Multipeer-Progress-Demo---macOS-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Multipeer-Progress-Demo---macOS-Shared.xcconfig"; sourceTree = "<group>"; };
+		246666492CEA56EC003007F8 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		2466664A2CEA56EC003007F8 /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		2466664B2CEA56EC003007F8 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
 		24B6AE572C7D43E7001A740A /* crash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crash.png; sourceTree = "<group>"; };
 		24C688992C7AACE900F8D36C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		24C6889C2C7AB25D00F8D36C /* FileTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTransferView.swift; sourceTree = "<group>"; };
@@ -102,6 +111,36 @@
 				2457D93D2CE982EF002242E9 /* ProcessInfo+.swift */,
 			);
 			path = Multipeer;
+			sourceTree = "<group>";
+		};
+		246666442CEA56EC003007F8 /* Multipeer Progress Demo - iOS */ = {
+			isa = PBXGroup;
+			children = (
+				246666412CEA56EC003007F8 /* Multipeer-Progress-Demo---iOS-Debug.xcconfig */,
+				246666422CEA56EC003007F8 /* Multipeer-Progress-Demo---iOS-Release.xcconfig */,
+				246666432CEA56EC003007F8 /* Multipeer-Progress-Demo---iOS-Shared.xcconfig */,
+			);
+			path = "Multipeer Progress Demo - iOS";
+			sourceTree = "<group>";
+		};
+		246666482CEA56EC003007F8 /* Multipeer Progress Demo - macOS */ = {
+			isa = PBXGroup;
+			children = (
+				246666452CEA56EC003007F8 /* Multipeer-Progress-Demo---macOS-Debug.xcconfig */,
+				246666462CEA56EC003007F8 /* Multipeer-Progress-Demo---macOS-Release.xcconfig */,
+				246666472CEA56EC003007F8 /* Multipeer-Progress-Demo---macOS-Shared.xcconfig */,
+			);
+			path = "Multipeer Progress Demo - macOS";
+			sourceTree = "<group>";
+		};
+		2466664C2CEA56EC003007F8 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				246666492CEA56EC003007F8 /* Project-Debug.xcconfig */,
+				2466664A2CEA56EC003007F8 /* Project-Release.xcconfig */,
+				2466664B2CEA56EC003007F8 /* Project-Shared.xcconfig */,
+			);
+			path = Project;
 			sourceTree = "<group>";
 		};
 		24D12F2E2C7A86E600D4B7BB = {
@@ -168,6 +207,9 @@
 		24D12F4C2C7A894100D4B7BB /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				246666442CEA56EC003007F8 /* Multipeer Progress Demo - iOS */,
+				246666482CEA56EC003007F8 /* Multipeer Progress Demo - macOS */,
+				2466664C2CEA56EC003007F8 /* Project */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -354,6 +396,7 @@
 /* Begin XCBuildConfiguration section */
 		24D12F442C7A86E700D4B7BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246666492CEA56EC003007F8 /* Project-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -417,6 +460,7 @@
 		};
 		24D12F452C7A86E700D4B7BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2466664A2CEA56EC003007F8 /* Project-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -472,6 +516,7 @@
 		};
 		24D12F472C7A86E700D4B7BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246666412CEA56EC003007F8 /* Multipeer-Progress-Demo---iOS-Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -513,6 +558,7 @@
 		};
 		24D12F482C7A86E700D4B7BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246666422CEA56EC003007F8 /* Multipeer-Progress-Demo---iOS-Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -554,6 +600,7 @@
 		};
 		24D12FA42C7AAA8000D4B7BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246666452CEA56EC003007F8 /* Multipeer-Progress-Demo---macOS-Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -594,6 +641,7 @@
 		};
 		24D12FA52C7AAA8000D4B7BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246666462CEA56EC003007F8 /* Multipeer-Progress-Demo---macOS-Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

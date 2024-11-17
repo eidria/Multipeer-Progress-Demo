@@ -35,15 +35,15 @@ public class MPCoordinator: NSObject {
         myName = peerID.displayName
         mcSession = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .none)
         mpSession = MPSessionManager(session: mcSession)
-        
-        #if os(macOS)
-        mpAdvertiser = MPAdvertiser(session: mcSession, serviceType: MPCoordinator.service)
-        mpBrowser = nil
-        #else
-        mpBrowser = MPBrowser(session: mcSession, serviceType: MPCoordinator.service)
-        mpAdvertiser = nil
-        #endif
-        
+
+//        #if os(macOS)
+            mpAdvertiser = MPAdvertiser(session: mcSession, serviceType: MPCoordinator.service)
+//            mpBrowser = nil
+//        #else
+            mpBrowser = MPBrowser(session: mcSession, serviceType: MPCoordinator.service)
+//            mpAdvertiser = nil
+//        #endif
+
         super.init()
 
         Task {
@@ -102,7 +102,7 @@ public class MPCoordinator: NSObject {
             print("\(myName) starting advertising services")
             mpAdvertiser.startAdvertising()
         }
-        
+
         if let mpBrowser {
             print("\(myName) starting browsing services")
             mpBrowser.startBrowsing()
@@ -114,7 +114,7 @@ public class MPCoordinator: NSObject {
             print("\(myName) stopping advertising services")
             mpAdvertiser.stopAdvertising()
         }
- 
+
         if let mpBrowser {
             print("\(myName) stopping browsing services")
             mpBrowser.stopBrowsing()
@@ -122,32 +122,20 @@ public class MPCoordinator: NSObject {
     }
 
     public func handleSessionChange(session: MCSession, peerID: MCPeerID, state: MCSessionState) {
+        print("\(session.name) state changed to \(state.displayName) for \(peerID.displayName)")
+
         connectionState.value = state
 
         switch state {
         case .notConnected:
-            print("\(myName) Session state changed to .notConnected")
             connectionName = "No Connection"
-        //                   startServices()
         case .connecting:
-//            session.nearbyConnectionData(forPeer: peerID) { data, error in
-//                if let data {
-//                    session.connectPeer(peerID, withNearbyConnectionData: data)
-//                } else {
-//                    print(
-//                        "connecting to peer \(peerID.displayName) failed: \(error?.localizedDescription ?? "unknown error")"
-//                    )
-//                }
-//            }
-            print("\(myName) Session state changed to .connecting")
-        //                   stopServices()
+            stopServices()
         case .connected:
-            print("\(myName) Session state changed to .connected")
             if let connectedPeer = session.connectedPeers.first {
                 connectionName = connectedPeer.displayName
             }
-        @unknown default:
-            print("\(myName) Session state changed to @unknown default")
+        @unknown default: ()
         }
     }
 
@@ -175,4 +163,3 @@ public class MPCoordinator: NSObject {
         incomingFile.value = nil
     }
 }
-

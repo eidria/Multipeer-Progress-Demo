@@ -35,7 +35,7 @@ public class MPBrowser: NSObject, MCNearbyServiceBrowserDelegate {
         if invitedPeers.isEmpty {
             invitedPeers.insert(peerID)
             print("browser for \(session.name) invited \(peerID.displayName)")
-            browser.invitePeer(peerID, to: session, withContext: nil, timeout: 60)  // zero timeout == default == 30 seconds
+            browser.invitePeer(peerID, to: session, withContext: nil, timeout: 30.0)  // zero timeout == default == 30 seconds
         }
     }
 
