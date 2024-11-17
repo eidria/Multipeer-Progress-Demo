@@ -32,7 +32,7 @@ public class MPBrowser: NSObject, MCNearbyServiceBrowserDelegate {
     public func browser(
         _ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String: String]?
     ) {
-        if invitedPeers.isEmpty && peerID != session.myPeerID {
+        if invitedPeers.isEmpty && peerID.displayName != "localhost" {
             invitedPeers.insert(peerID)
             print("browser for \(session.name) invited \(peerID.displayName)")
             browser.invitePeer(peerID, to: session, withContext: nil, timeout: 30.0)  // zero timeout == default == 30 seconds
