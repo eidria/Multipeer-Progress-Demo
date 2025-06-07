@@ -7,7 +7,9 @@
 
 import Combine
 import Foundation
-import MultipeerConnectivity
+//import MultipeerConnectivity
+import PF3DPeerToPeer
+
 
 public struct FileTransfer {
     var fileName: String
@@ -25,8 +27,8 @@ public enum PeerMode: String, CaseIterable, Identifiable {
 @Observable
 @MainActor
 public class MPCoordinator: NSObject {
-    let mcSession: MCSession
-    let mpSession: MPSessionManager
+    let session: MCSession
+    let sessionManager: MPSessionManager
     let myName: String
     let incomingFile = CurrentValueSubject<FileTransfer?, Never>(nil)
     let outgoingFile = CurrentValueSubject<FileTransfer?, Never>(nil)
@@ -46,13 +48,13 @@ public class MPCoordinator: NSObject {
 
     init(peerID: MCPeerID) {
         myName = peerID.displayName
-        mcSession = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .none)
-        mpSession = MPSessionManager(session: mcSession)
+        session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .none)
+        sessionManager = MPSessionManager(session: session)
 
         super.init()
 
         Task {
-            for await message in mpSession.sessionActivity.stream {
+            for await message in sessionManager.sessionActivity.stream {
                 switch message {
                 case let .sessionChange(session, peerID, state):
                     handleSessionChange(session: session, peerID: peerID, state: state)
@@ -71,8 +73,8 @@ public class MPCoordinator: NSObject {
     }
 
     func sendResource(url: URL, withName name: String) {
-        if let peer = mcSession.connectedPeers.first {
-            let progress = mcSession.sendResource(
+        if let peer = session.connectedPeers.first {
+            let progress = session.sendResource(
                 at: url, withName: name, toPeer: peer, withCompletionHandler: handleFileSent)
             Task {
                 await MainActor.run {

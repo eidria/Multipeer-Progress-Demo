@@ -6,8 +6,11 @@
 //    Copyright © 2024 Eidria Inc. All rights reserved.
 
 import Foundation
-import MultipeerConnectivity
+//import MultipeerConnectivity
+import PF3DPeerToPeer
 
+@Observable
+@MainActor
 public class MPAdvertiser: NSObject, MCNearbyServiceAdvertiserDelegate {
     var session: MCSession
     var advertiser: MCNearbyServiceAdvertiser

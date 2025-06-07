@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -43,6 +43,8 @@
 		24D12FAB2C7AAB2100D4B7BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12FAA2C7AAB0C00D4B7BB /* ContentView.swift */; };
 		24D12FAD2C7AAB5600D4B7BB /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12FAC2C7AAB5600D4B7BB /* StatusView.swift */; };
 		24D12FAE2C7AAB9400D4B7BB /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D12FAC2C7AAB5600D4B7BB /* StatusView.swift */; };
+		44ED6BB62DD14E5C009CBEC2 /* PF3DPeerToPeer in Frameworks */ = {isa = PBXBuildFile; productRef = 44ED6BB52DD14E5C009CBEC2 /* PF3DPeerToPeer */; };
+		44ED6BB82DD14EB6009CBEC2 /* PF3DPeerToPeer in Frameworks */ = {isa = PBXBuildFile; productRef = 44ED6BB72DD14EB6009CBEC2 /* PF3DPeerToPeer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44ED6BB82DD14EB6009CBEC2 /* PF3DPeerToPeer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44ED6BB62DD14E5C009CBEC2 /* PF3DPeerToPeer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +160,7 @@
 				24D12F392C7A86E600D4B7BB /* Multipeer Progress Demo */,
 				24D12F382C7A86E600D4B7BB /* Products */,
 				24D12FA72C7AAA8000D4B7BB /* Multipeer Progress Demo copy-Info.plist */,
+				44ED6BB42DD14E5C009CBEC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,6 +263,13 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		44ED6BB42DD14E5C009CBEC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,7 +315,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					24D12F362C7A86E600D4B7BB = {
 						CreatedOnToolsVersion = 15.4;
@@ -319,6 +331,9 @@
 				Base,
 			);
 			mainGroup = 24D12F2E2C7A86E600D4B7BB;
+			packageReferences = (
+				44ED6BB32DD14B06009CBEC2 /* XCLocalSwiftPackageReference "../PF3DPeerToPeer" */,
+			);
 			productRefGroup = 24D12F382C7A86E600D4B7BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -437,6 +452,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 37W6Z248FA;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -501,6 +517,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 37W6Z248FA;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -531,7 +548,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Multipeer Progress Demo/Preview Content\"";
-				DEVELOPMENT_TEAM = 37W6Z248FA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -573,7 +589,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Multipeer Progress Demo/Preview Content\"";
-				DEVELOPMENT_TEAM = 37W6Z248FA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -615,7 +630,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Multipeer Progress Demo/Preview Content\"";
-				DEVELOPMENT_TEAM = 37W6Z248FA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -656,7 +670,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Multipeer Progress Demo/Preview Content\"";
-				DEVELOPMENT_TEAM = 37W6Z248FA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -717,6 +730,26 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		44ED6BB32DD14B06009CBEC2 /* XCLocalSwiftPackageReference "../PF3DPeerToPeer" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../PF3DPeerToPeer;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44ED6BB52DD14E5C009CBEC2 /* PF3DPeerToPeer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44ED6BB32DD14B06009CBEC2 /* XCLocalSwiftPackageReference "../PF3DPeerToPeer" */;
+			productName = PF3DPeerToPeer;
+		};
+		44ED6BB72DD14EB6009CBEC2 /* PF3DPeerToPeer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44ED6BB32DD14B06009CBEC2 /* XCLocalSwiftPackageReference "../PF3DPeerToPeer" */;
+			productName = PF3DPeerToPeer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24D12F2F2C7A86E600D4B7BB /* Project object */;
 }

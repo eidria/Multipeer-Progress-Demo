@@ -6,8 +6,10 @@
 //    Copyright © 2024 Eidria Inc. All rights reserved.
 
 import Foundation
-import MultipeerConnectivity
+//import MultipeerConnectivity
+import PF3DPeerToPeer
 import Synchronization
+
 
 class MPSessionManager: NSObject, MCSessionDelegate {
     public enum SessionMessage {

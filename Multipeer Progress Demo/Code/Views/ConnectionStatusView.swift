@@ -7,7 +7,9 @@
 
 
 import SwiftUI
-import MultipeerConnectivity
+//import MultipeerConnectivity
+import PF3DPeerToPeer
+
 
 struct ConnectionStatusView: View {
     @Environment(MPCoordinator.self) var sessionManager
